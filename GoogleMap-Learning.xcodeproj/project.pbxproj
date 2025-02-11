@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		17742D752B9C5FC00DCE8A86 /* Pods_GoogleMap_Learning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C6C6AB8214C645661AD7E5 /* Pods_GoogleMap_Learning.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		075EB77DCAE49081A44371DE /* Pods-GoogleMap-Learning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMap-Learning.release.xcconfig"; path = "Target Support Files/Pods-GoogleMap-Learning/Pods-GoogleMap-Learning.release.xcconfig"; sourceTree = "<group>"; };
 		33B8F80D2D5B04CA0045A8EF /* GoogleMap-Learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoogleMap-Learning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C6C6AB8214C645661AD7E5 /* Pods_GoogleMap_Learning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleMap_Learning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91FB4B6015DA75B850A8C440 /* Pods-GoogleMap-Learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMap-Learning.debug.xcconfig"; path = "Target Support Files/Pods-GoogleMap-Learning/Pods-GoogleMap-Learning.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17742D752B9C5FC00DCE8A86 /* Pods_GoogleMap_Learning.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +55,8 @@
 			children = (
 				33B8F80F2D5B04CA0045A8EF /* GoogleMap-Learning */,
 				33B8F80E2D5B04CA0045A8EF /* Products */,
+				D9E43C246E6511C0C28FF668 /* Pods */,
+				9BAE45B145E1221AB6BE9780 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +68,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		9BAE45B145E1221AB6BE9780 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79C6C6AB8214C645661AD7E5 /* Pods_GoogleMap_Learning.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9E43C246E6511C0C28FF668 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91FB4B6015DA75B850A8C440 /* Pods-GoogleMap-Learning.debug.xcconfig */,
+				075EB77DCAE49081A44371DE /* Pods-GoogleMap-Learning.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,9 +93,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33B8F8202D5B04CC0045A8EF /* Build configuration list for PBXNativeTarget "GoogleMap-Learning" */;
 			buildPhases = (
+				AC6B2655DB1AB2B14CD1609D /* [CP] Check Pods Manifest.lock */,
 				33B8F8092D5B04CA0045A8EF /* Sources */,
 				33B8F80A2D5B04CA0045A8EF /* Frameworks */,
 				33B8F80B2D5B04CA0045A8EF /* Resources */,
+				E1C945B89EF71470FFC7C1A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -77,8 +107,6 @@
 				33B8F80F2D5B04CA0045A8EF /* GoogleMap-Learning */,
 			);
 			name = "GoogleMap-Learning";
-			packageProductDependencies = (
-			);
 			productName = "GoogleMap-Learning";
 			productReference = 33B8F80D2D5B04CA0045A8EF /* GoogleMap-Learning.app */;
 			productType = "com.apple.product-type.application";
@@ -127,6 +155,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AC6B2655DB1AB2B14CD1609D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleMap-Learning-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1C945B89EF71470FFC7C1A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleMap-Learning/Pods-GoogleMap-Learning-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleMap-Learning/Pods-GoogleMap-Learning-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleMap-Learning/Pods-GoogleMap-Learning-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		33B8F8092D5B04CA0045A8EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +210,7 @@
 /* Begin XCBuildConfiguration section */
 		33B8F8212D5B04CC0045A8EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91FB4B6015DA75B850A8C440 /* Pods-GoogleMap-Learning.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -168,6 +239,7 @@
 		};
 		33B8F8222D5B04CC0045A8EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 075EB77DCAE49081A44371DE /* Pods-GoogleMap-Learning.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
